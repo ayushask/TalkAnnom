@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC 
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+	<class name="com.talkanno.pojos.Message" table="AM_MSG">
+
+		<id name="serial" column="MSG_SERIAL">
+			<generator class="increment" />
+		</id>
+		<property name="message" column="AM_MSG"></property>
+		<property name="userSerial" column="AM_USER_SERIAL"></property>
+	</class>
+
+</hibernate-mapping>
